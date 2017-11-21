@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  application:
+      name: config-server
+  cloud:
+    config:
+      label: master #git branch
+      server:
+        git:
+          uri: https://github.com/chen-jie/spring-cloud-config/ #git url
+          searchPaths: hello-repo  #git search folder

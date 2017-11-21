@@ -1,0 +1,12 @@
+server:
+  port: 8881
+
+spring:
+  application:
+      name: config-server
+  cloud:
+    config:
+      label: master #git branch
+      profile: dev
+      url: http://localhost:8888/ #spring cloud config server url
+# in this case, looking for config file named    "config-sever-dev"   in master branch
